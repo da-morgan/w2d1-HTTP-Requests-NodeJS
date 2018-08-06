@@ -11,7 +11,7 @@ function getAndPrintHTMLChunks () {
     console.log('making request');
     response.on('data' ,function(chunk){
       console.log('chunk recieved');
-      console.log(chunk);
+      console.log(chunk.toString());
     });
 
   }).end();
